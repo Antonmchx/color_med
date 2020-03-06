@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #fefefe;
+  padding: 10px 20px 10px 20px;
+  width: 100%;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 40px 40px auto 40px 40px;
+  transition: background 1s linear;
+}
+
+.box {
+  grid-column: 1/-1;
+  grid-row: 3/4;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  background: #ff6a33;
+  transition: all 2s ease;
+  display: flex;
+  border-radius: 2%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.445);
+}
+
+.blue {
+  position: absolute;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.blue {
+  z-index: 2;
+  transition: transform 2s ease;
+}
+.blue:hover {
+  transform: translateX(20px);
+}
+.black {
+  z-index: 1;
+  transform: translate(2px, 10px);
+}
+.black svg {
+  fill: rgba(0, 0, 0, 0.02);
+  opacity: 0;
+}
+.blue svg {
+  filter: drop-shadow(7px 7px 5px rgba(0, 0, 0, 0.212));
+  transition: fill 2s ease;
+}
+
+#_two_ {
+  transition: all 1s ease;
+}
+#_one_ {
+  transition: all 0.6s ease;
+}
+#_three_ {
+  transition: all 0.8s ease;
+}
+.el_blue {
+  fill: #002fc6;
+}
+.vel_blue {
+  fill: #2736a9;
+}
+.d_blue {
+  fill: #002bb2;
+}
+.gray_blue {
+  fill: #a2a7d5;
+}
+.white {
+  fill: #f3faf8;
+}
+.l_blue {
+  fill: #a2cdff;
+}
+.yellow {
+  fill: #ddbd43;
+}
+.pink {
+  fill: #e495c4;
+}
+.white_gray {
+  fill: #a7a0a7;
+}
+
+.light_brown {
+  fill: #b99b92;
+}
+.l_yellow {
+  fill: #ecf47c;
+}
+.mist_blue {
+  fill: #849df1;
+}
+.green {
+  fill: #849d62;
+}
